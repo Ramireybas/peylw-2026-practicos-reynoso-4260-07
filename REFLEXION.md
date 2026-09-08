@@ -1,15 +1,13 @@
-1-peylw-2026-practicos-reynoso-4260-07
+# Reflexión Aplicada - TP2
 
+### 1. Nombre de la imagen y atributo alt
+La imagen está guardada en la carpeta `img/` con el nombre exacto `Foto_mia.jpeg`. 
+ `alt` es asignado en `acercade.html` es: `alt="foto del autor"`.
 
-2-
-On branch main
+### 2. Importancia de las etiquetas semánticas
+Esto es mas que nada para los metadatos y para el orden ya que al poner div el criterio del creador puede diferir con el de un observador.
 
-Changes to be committed:
-  (use "git restore --staged <file>..." to unstage)
-	new file:   index.html
+### 3. Verificación de rutas de enlaces
+En el entorno local lo probé abriendo el archivo `index.html` en el navegador y haciendo clic en los enlaces de la barra de navegación para comprobar que pasaran de una página a otra sin dar error de "archivo no encontrado". 
 
-3-
-working directory es la carpeta local (es decir desde la pc del desarrollador) donde se puede crear o editar el codigo . Pero no se registran los cambios
-Staging Area es la carpeta donde se preparan el codigo antes de guardar los cambios definitivos.
-Es decir que la primera es un laboratorio de prueba mientras que el segundo es la preparacion antes del envio definitivo 
-
+Para garantizar que funcione en GitHub Pages, me aseguré de usar rutas relativas (es decir, escribir `styles.css` o `img/Foto_mia.jpeg` en lugar de poner una barra al inicio como `/styles.css`). La barra al inicio busca en la raíz del servidor web y en GitHub Pages el proyecto vive dentro de una subcarpeta, lo que rompería la carga de estilos e imágenes.
