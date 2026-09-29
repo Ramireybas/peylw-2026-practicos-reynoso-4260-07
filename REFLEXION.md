@@ -8,6 +8,7 @@ Reflexión Aplicada - TP3
        placeholder="Ej: R8500AAF"
        title="Formato requerido: Una letra mayúscula, cuatro números y tres letras mayúsculas (ej: R8500AAF)">
 `
+
 2-La etiqueta label sirve para crear un texto donde se pueda describir lo que se debe escribir en el campo de un formulario.
 El for es el vinculo que une el label y el input correspondiente.
 
