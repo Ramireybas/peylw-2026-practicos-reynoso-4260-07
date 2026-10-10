@@ -44,7 +44,7 @@ header h1 {
     transform: rotateY(360deg);
 }
 .imagen_perfil {
-    height: 45%;
+    height: 150px;
 }
 
 nav ul {
