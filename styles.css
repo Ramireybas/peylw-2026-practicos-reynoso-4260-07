@@ -43,6 +43,9 @@ header h1 {
 .logo-curza:hover {
     transform: rotateY(360deg);
 }
+.imagen_perfil {
+    height: 45%;
+}
 
 nav ul {
     display: flex;
