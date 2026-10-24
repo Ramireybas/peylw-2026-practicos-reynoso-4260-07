@@ -207,3 +207,19 @@ footer {
 .cv-completo {
     display: none;
 }
+
+
+#btn-leer-mas{ 
+    margin-bottom: 10px;
+    padding: 8px 14px;
+    cursor: pointer;
+    background-color: hsl(215, 80%, 40%);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+#btn-leer-mas:hover {
+    background-color: hsl(215, 80%, 30%);
+}
