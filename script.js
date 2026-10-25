@@ -84,8 +84,8 @@ document.addEventListener("DOMContentLoaded", () => {
         actualizarSuscripciones();
     }
 
-    const btnLeerMas = document.getElementById("btn-leer-mas-reynoso-4260-07");
-    const cvCompleto = document.querySelector(".cv-completo");
+    const btnLeerMas = document.getElementById("btn-leer-mas");
+    const cvCompleto = document.querySelector("cv");
 
     if (btnLeerMas && cvCompleto) {
         btnLeerMas.addEventListener("click", () => {
