@@ -1,19 +1,22 @@
-Reflexión Aplicada - TP4
+Reflexión Aplicada - TP5
 
-1- el código que hace la animación del logo es:
+1- 
 `
-.logo-curza {
-    height: 40px;
-    transition: transform 1s ease-in-out;
-}
+if (inputEdad && tdEdad) {
+    inputEdad.addEventListener("input", (e) => {
+        const valorEdad = parseInt(e.target.value, 10);
+        if (!isNaN(valorEdad) && valorEdad < 18) {
+            tdEdad.innerText = `${valorEdad} (Menor de edad)`;
+            tdEdad.style.backgroundColor = "#ffcccc";
+        } else {
+            tdEdad.innerText = e.target.value;
+            tdEdad.style.backgroundColor = "";
+        }
+    });
+}`
 
-.logo-curza:hover {
-    transform: rotateY(360deg);
-}
-`
+2- El input funciona al mismo momento que se va ingresando los datos mientras que change cambia solo una vez que se haya ingresado todo y que haga clic en el evento. 
 
-2- Html pone un fondo transparente por defecto y cuando un elemento con posicion sticky se fija en la parte superior al hacer scroll el contenido sigue desplazandose y pasan debajo de el. Si le asignamos un color de fondo solido se crea una capa que aisla el elemento fijo del contenido que se mueve.
-Si no se define se produce una superposición visual. Donde se veria el contenido atraves del sticky
 
-3- cambia el menu y ordenan el titulo y los botones uno a bajo de otro,
-se ve mas espacio arriba para que el menu no tape las primeras letras y  las tablas se deslizan para que se pueda ver bien en el dispositivo. 
+
+3-  Para evitar que el script  arroje errores en la consola al navegar entre diferentes páginas , se implementa  if. De esta forma, antes de que JavaScript intente agregar un escuchador de eventos o modificar un elemento, verifica primero si ese elemento realmente existe en el DOM de la página actual. Si no lo encuentra (porque estamos en otra vista), la condición simplemente se saltea, evitando el error null pointer y permitiendo usar un único archivo script.js de forma limpia y segura para todo el sitio.
