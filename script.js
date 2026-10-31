@@ -1,9 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Script cargado exitosamente");
     
-    // ==========================================
-    // TAREA 2: Volcado del Formulario en Tiempo Real (contacto.html)
-    // ==========================================
+
     const inputNombre = document.getElementById("nombre");
     const inputApellido = document.getElementById("apellido");
     const inputEmail = document.getElementById("email");
@@ -86,9 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
         actualizarSuscripciones();
     }
 
-    // ==========================================
-    // TAREA 3: Componente de Expansión de Biografía (acercade.html)
-    // ==========================================
+
     const btnLeerMas = document.getElementById("btn-leer-mas-reynoso-4260-07");
     const cvCompleto = document.querySelector(".cv-completo");
 
