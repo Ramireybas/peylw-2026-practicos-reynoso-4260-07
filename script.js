@@ -1,5 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
     console.log("Script cargado exitosamente");
+    
+    // ==========================================
+    // TAREA 2: Volcado del Formulario en Tiempo Real (contacto.html)
+    // ==========================================
     const inputNombre = document.getElementById("nombre");
     const inputApellido = document.getElementById("apellido");
     const inputEmail = document.getElementById("email");
@@ -36,7 +40,6 @@ document.addEventListener("DOMContentLoaded", () => {
     vincularInput(inputCp, tdCp);
     vincularInput(inputProvincia, tdProvincia);
 
-
     if (inputEdad && tdEdad) {
         inputEdad.addEventListener("input", (e) => {
             const valorEdad = parseInt(e.target.value, 10);
@@ -50,7 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-  const radiosMetodo = document.querySelectorAll('input[name="met_contacto"]');
+    const radiosMetodo = document.querySelectorAll('input[name="met_contacto"]');
     if (radiosMetodo.length > 0 && tdMetodo) {
         radiosMetodo.forEach(radio => {
             radio.addEventListener("change", (e) => {
@@ -65,7 +68,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-   
     const checkboxesSuscripcion = document.querySelectorAll('input[name="suscripciones[]"]');
     if (checkboxesSuscripcion.length > 0 && tdSuscripcion) {
         function actualizarSuscripciones() {
@@ -84,8 +86,11 @@ document.addEventListener("DOMContentLoaded", () => {
         actualizarSuscripciones();
     }
 
-    const btnLeerMas = document.getElementById("btn-leer-mas");
-    const cvCompleto = document.querySelector("cv");
+    // ==========================================
+    // TAREA 3: Componente de Expansión de Biografía (acercade.html)
+    // ==========================================
+    const btnLeerMas = document.getElementById("btn-leer-mas-reynoso-4260-07");
+    const cvCompleto = document.querySelector(".cv-completo");
 
     if (btnLeerMas && cvCompleto) {
         btnLeerMas.addEventListener("click", () => {
