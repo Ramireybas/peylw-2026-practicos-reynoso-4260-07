@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
     const inputDireccion = document.getElementById("direccion");
     const inputProvincia = document.getElementById("provincia");
     const inputCp = document.getElementById("cp");
-
     const tdNombre = document.getElementById("resumen-nombre");
     const tdApellido = document.getElementById("resumen-apellido");
     const tdEmail = document.getElementById("resumen-email");
