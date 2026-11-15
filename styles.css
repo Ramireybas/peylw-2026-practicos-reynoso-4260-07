@@ -242,3 +242,97 @@ footer {
 #btn-leer-mas-reynoso-4260-07:hover {
     background-color: hsl(215, 80%, 30%);
 }
+
+.panel-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.panel-stats p {
+    flex: 1;
+    min-width: 140px;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+}
+
+.panel-stats span {
+    font-weight: 600;
+    color: hsl(215, 80%, 40%);
+}
+
+.fila-juego {
+    display: flex;
+    gap: 10px;
+}
+
+.fila-juego input {
+    margin-top: 0;
+}
+
+.mensaje {
+    margin: 20px 0;
+    padding: 12px;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    font-weight: 600;
+    transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+.mensaje.alto {
+    background-color: #ffe0cc;
+    color: #a04000;
+}
+
+.mensaje.bajo {
+    background-color: #cce8ff;
+    color: #00508a;
+}
+
+.mensaje.acierto {
+    background-color: #ccffcc;
+    color: #1a6b1a;
+}
+
+.mensaje.error {
+    background-color: #ffcccc;
+    color: #a00000;
+}
+
+#btn-probar-reynoso-4260-07 {
+    transition: background-color 0.3s ease;
+}
+
+#btn-reiniciar-reynoso-4260-07 {
+    padding: 8px 14px;
+    cursor: pointer;
+    background-color: hsl(215, 80%, 40%);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+#btn-reiniciar-reynoso-4260-07:hover {
+    background-color: hsl(215, 80%, 30%);
+}
+
+#form-juego button:disabled,
+#form-juego input:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+@media (max-width: 480px) {
+    .fila-juego {
+        flex-direction: column;
+    }
+    #btn-reiniciar-reynoso-4260-07 {
+        width: 100%;
+    }
+}
