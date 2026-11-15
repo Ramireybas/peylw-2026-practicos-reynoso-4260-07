@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- TOKEN-ALUMNO: reynoso-4260-07 -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos - Portal de Ramiro Reynoso</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" media="screen">
+</head>
+<body>
+    <div id="top"></div>
+    <header>
+        <div class="contendor_header">
+            <h1>Portal de Ramiro Reynoso - reynoso-4260-07</h1>
+            <img src="img/logo_curza.png" alt="Logo CURZA" class="logo-curza">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Index</a></li>
+                    <li><a href="acercade.html">Acerca de</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="juego.html">Juegos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="juego">
+            <h2>Área de Juegos de Ramiro Reynoso - Token: reynoso-4260-07</h2>
+            <p>Adiviná el número entre 1 y 100 en la menor cantidad de intentos.</p>
+
+            <div class="panel-stats">
+                <p>Intentos: <span id="intentos">0</span></p>
+                <p>Puntos: <span id="puntos">0</span></p>
+                <p>Record Actual: <span id="record">Sin récord</span></p>
+            </div>
+
+            <form id="form-juego">
+                <label for="numero-usuario">Tu número:</label>
+                <div class="fila-juego">
+                    <input id="numero-usuario" type="number" min="1" max="100">
+                    <button type="submit" id="btn-probar-reynoso-4260-07">Probar</button>
+                </div>
+            </form>
+
+            <p id="mensaje" class="mensaje"></p>
+
+            <p>Números probados: <span id="lista-intentos">-</span></p>
+
+            <button type="button" id="btn-reiniciar-reynoso-4260-07">Reiniciar</button>
+        </section>
+    </main>
+
+    <a href="#top" class="btn-arriba">▲</a>
+
+    <footer>
+        <p>Reservados todos los derechos © 2026<br>Universidad Nacional del Comahue<br>Viedma - Río Negro</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
