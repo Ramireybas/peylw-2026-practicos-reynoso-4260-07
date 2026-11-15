@@ -107,9 +107,8 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
     }
-});
 
-    if (formJuego && inputNumero && btnReiniciar) {
+    if (formJuego && inputNumero && btnProbar && btnReiniciar) {
         const token = "reynoso-4260-07";
         let numeroSecreto;
         let intentos = [];
@@ -197,3 +196,4 @@ document.addEventListener("DOMContentLoaded", () => {
 
         iniciarJuego();
     }
+});
